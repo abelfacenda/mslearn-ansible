@@ -3,6 +3,8 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-latest'
+  demands:
+    - ansible
 
 steps:
   - task: Ansible@0
